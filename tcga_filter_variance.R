@@ -82,9 +82,9 @@ merged <- merge(gene_expr, clin, by.x = "id", by.y = "sample")
 sort(unique(merged$`cancer type abbreviation`))
 
 
-#######################
-## Clean merged file ##
-#######################
+#####################
+# Clean merged file #
+#####################
 table(merged$`tcga code`) #to check if all codes are included --> 33 codes, all codes are included 
 
 #####Test for duplicates 
@@ -93,9 +93,9 @@ dup <- as.data.frame(duplicated(merged$id))
 dup_rows <- merged[dup$`duplicated(merged$id)`, ]
 #no duplicates
 
-###########################
-## Calculate mean/median ##
-###########################
+#########################
+# Calculate mean/median #
+#########################
 
 #Transform to long format
 merged_long <- pivot_longer(merged, cols = gene$gene) 
@@ -156,18 +156,3 @@ dev.off()
 
 output_file_table1 <- paste(OUT,"filtered_variance_genes_tcga", ".csv", sep="")
 fwrite(complete_df, output_file_table1, row.names = TRUE)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
