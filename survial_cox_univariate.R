@@ -1,6 +1,6 @@
-###############
-## Libraries ##
-###############
+#############
+# Libraries #
+#############
 
 library(tidyverse)
 library(data.table)
@@ -9,9 +9,9 @@ library(optparse)
 library(survival)
 library(survminer)
 
-##################
-## Kaplan-Meier ##
-##################
+################
+# Kaplan-Meier #
+################
 
 create_km <- function(survival_fit, GENE_NAME, CANCER, analysis_type, OUT) {
   output_file <- paste(OUT, "survival_", analysis_type, "_" , CANCER, "_", GENE_NAME, ".pdf", sep = "")
@@ -112,9 +112,10 @@ gene_list <- unique(gene$gene)
 #merged <- merge(gene_expr, clin, by.x = "id", by.y = "sample")
 #merged <- merged[,c(1:45,70,71,74,75)]
 #saveRDS(merged,"survival_tcga.rds") #data for app
-##################
-## Prepare data ##
-##################
+
+################
+# Prepare data #
+################
 
 # Initialize results data frames
 dss_results <- data.frame()
