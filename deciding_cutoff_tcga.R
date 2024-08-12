@@ -97,8 +97,9 @@ pdf("tileplot_housekeeping_genes.pdf", width = 15, height = 20, onefile = F)
 print(tileplot_median)
 dev.off()
 
-#################
-#Decide cut-off value of variance 
+####################################
+# Decide cut-off value of variance #
+####################################
 
 hist(variance_data$VarianceExpression)
 lines(density(variance_data$VarianceExpression))
