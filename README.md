@@ -1,4 +1,4 @@
-Proteoglycan project 
+Proteoglycan project: PanCan analyses of proteoglycan expression in survival (DSS & PFI)
 
 1) Preprocess expression file and clinical file : preprocessing_expression_data.R & preprocessing_clinical_sample_data.R
 2) Decide expression cutoff to filter out potential housekeeping genes: deciding_cutoff_tcga.R 
