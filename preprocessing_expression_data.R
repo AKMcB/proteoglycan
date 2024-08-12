@@ -6,32 +6,6 @@
 library(tidyverse)
 library(data.table)
 
-
-######################
-# CCLE preprocessing #
-######################
-
-#Read expression data
-expr <- as.data.frame(fread("OmicsExpressionProteinCodingGenesTPMLogp1.csv", header=TRUE))
-colnames(expr)[1] <- "id"
-
-expr <- column_to_rownames(expr, "id")
-
-new_colnames <- gsub("\\ .*","",colnames(expr))
-colnames(expr) <- new_colnames
-
-expr <- as.data.frame(t(expr))
-expr <- rownames_to_column(expr, "gene")
-
-#Check for duplicates 
-
-dup <- as.data.frame(duplicated(expr$gene)) #All FALSE values
-
-#save file
-fwrite(expr, "expression_data_ccle_edited.csv", row.names = TRUE)
-
-
-
 ######################
 # TCGA preprocessing #
 ######################
