@@ -8,3 +8,6 @@ Proteoglycan project: PanCan analyses of proteoglycan expression in survival (DS
 
 
 ![pipeline](https://github.com/user-attachments/assets/aa6ab836-5ec3-4af8-b997-6f330f9afd29)
+
+
+The PanCan expression file can be downloaded from: https://xenabrowser.net/datapages/?dataset=EB%2B%2BAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.xena&host=https%3A%2F%2Fpancanatlas.xenahubs.net&removeHub=https%3A%2F%2Fucscpublic.xenahubs.net 
