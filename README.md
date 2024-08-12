@@ -1,6 +1,6 @@
 Proteoglycan project 
 
-1) Preprocess expression file and clinical file
+1) Preprocess expression file and clinical file \n
      preprocessing_expression_data.R & preprocessing_clinical_sample_data.R
 2) Decide expression cutoff to filter out potential housekeeping genes
      deciding_cutoff_tcga.R 
