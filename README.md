@@ -12,3 +12,9 @@ Proteoglycan project: PanCan analyses of proteoglycan expression in survival (DS
 
 The PanCan expression file can be downloaded from: https://xenabrowser.net/datapages/?dataset=EB%2B%2BAdjustPANCAN_IlluminaHiSeq_RNASeqV2.geneExp.xena&host=https%3A%2F%2Fpancanatlas.xenahubs.net&removeHub=https%3A%2F%2Fucscpublic.xenahubs.net 
 Look in data folder for additional files used in the analysis
+
+
+Human Protein Atlas 
+The expression levels of genes in normal cell types and tissue can be downloaded from https://www.proteinatlas.org/about/download. 
+The following scripts heatmap_hpa.R and proteoglycan_normal_hpa_tissue.R were used to investigate the expression of the proteoglycan genes in normal cell types and tissue. 
+The script germ_layer.R was used to categorize the cells types into their germ layer origin. 
